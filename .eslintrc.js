@@ -13,7 +13,7 @@ module.exports = {
     'plugin:nuxt/recommended',
     'plugin:prettier/recommended'
   ],
-  plugins: [],
+  plugins: ['vue'],
   // add your custom rules here
   rules: {
     semi: ['error', 'never'],
