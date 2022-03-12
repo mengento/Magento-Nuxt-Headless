@@ -1,0 +1,22 @@
+{
+	"restartable": "rs",
+	"verbose": true,
+	"watch": [
+    "server/*.js",
+    "nuxt.config.js"
+	],
+	"env": {
+		"NODE_ENV": "development"
+  },
+  "ext": "js less",
+  "ignore": [
+    ".git",
+    ".svn",
+    "./.next",
+    "./node_modules",
+    "./.babelrc",
+    "./nodemon.json",
+    "./package.json",
+    "./yarn.lock"
+	]
+}

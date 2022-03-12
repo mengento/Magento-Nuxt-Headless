@@ -1,6 +1,8 @@
 const globalName = 'headless'
 
-export default {
+module.exports = {
+  ssr: true,
+  target: 'server',
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     meta: [
@@ -19,6 +21,7 @@ export default {
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
+  telemetry: false,
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
@@ -51,7 +54,11 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-    transpile: [/^element-ui/]
+    transpile: [/^element-ui/],
+    /*
+     ** You can extend webpack config here
+     */
+    extend() {}
   },
   globals: {
     id: `__${globalName}`,

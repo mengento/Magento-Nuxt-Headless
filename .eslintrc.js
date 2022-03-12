@@ -31,6 +31,7 @@ module.exports = {
           withNodeModules: true
         }
       }
-    ]
+    ],
+    'nuxt/no-cjs-in-config': 'off'
   }
 }
