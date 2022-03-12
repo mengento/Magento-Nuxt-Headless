@@ -16,7 +16,7 @@ export default {
         name: 'description',
         content: 'description'
       }
-    ],
+    ]
   },
   data: () => ({
     title: 'HomePage'
